@@ -509,6 +509,9 @@ header {
   background-color: #31d0aa;
 }
 
+.footer-email {
+  margin-left: auto;
+}
 .footer-email-title {
   font-weight: 500;
   font-size: 16px;
@@ -516,12 +519,10 @@ header {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
-  margin-left: 80px;
   display: flex;
 }
 
 .footer-sub {
-  margin-left: 80px;
   display: flex;
 }
 
@@ -735,6 +736,10 @@ header {
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 
 .backdrop.is-hidden .modal {
@@ -748,8 +753,6 @@ header {
   height: 24px;
   display: block;
   margin-left: auto;
-  margin-right: 24px;
-  margin-top: 24px;
   box-sizing: border-box;
   border-radius: 50%;
   cursor: pointer;
@@ -772,7 +775,6 @@ header {
 .modal-form {
   width: 360px;
   gap: 8px;
-  margin-left: 24px;
 }
 
 .modal-field {
@@ -839,7 +841,12 @@ header {
   border-radius: 4px;
   background-color: #fcfcfc;
   resize: none;
+  padding-top: 8px;
   padding-left: 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-textarea:is(:hover, :focus) {
@@ -862,8 +869,9 @@ header {
   padding: 16px 32px;
   border: transparent;
   align-items: flex-start;
-  margin: 24px 95px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 95px;
+  margin-top: 24px;
 }
 
 .modal-button:is(:hover, :focus) {
